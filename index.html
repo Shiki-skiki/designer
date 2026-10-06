@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Li Shen, independent web and visual designer. Distinctive digital experiences, thoughtful identities, and a little unexpected.">
+  <title>LI SHEN® | Independent Designer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f04435'/%3E%3Ctext x='9' y='45' font-family='Arial' font-size='35' font-weight='900' fill='%23101010'%3ELS%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Li Shen, home">LS<span>®</span></a>
+      <nav aria-label="Main navigation">
+        <a class="nav-work" href="#work">Work <span>05</span></a>
+        <button class="text-button" data-open="about-dialog">About</button>
+        <button class="contact-link" data-open="contact-dialog">LET’S TALK <span class="contact-icon" aria-hidden="true">↗</span></button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">INDEPENDENT DESIGNER & CREATIVE PARTNER</p>
+          <h1 id="hero-title"><span class="im">I’M</span><span class="name">LI SHEN<span class="name-period">.</span></span></h1>
+          <p class="hero-description">I turn bold ideas into distinctive websites<br class="desktop-break"> and digital experiences. Built to be felt.</p>
+          <a class="work-link" href="#work"><span class="round-arrow" aria-hidden="true">↘</span><span>EXPLORE MY WORK</span></a>
+        </div>
+        <div class="hero-art">
+          <div class="orbit orbit-outer" aria-hidden="true"></div>
+          <div class="orbit orbit-inner" aria-hidden="true"></div>
+          <div class="visual-disc"><img src="assets/orbit.webp" width="1024" height="1024" alt="Sculptural chrome orbit with vivid red reflections on a black sphere" fetchpriority="high"></div>
+          <span class="orbit-label" aria-hidden="true">A DIFFERENT PERSPECTIVE</span>
+          <span class="art-cross" aria-hidden="true">+</span>
+          <button class="reel-button" id="open-reel" aria-label="Play design reel"><span class="play-symbol" aria-hidden="true">▶</span><span>PLAY<br>REEL</span></button>
+          <span class="art-caption">FORM. FEELING. FUNCTION.</span>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="work-heading">
+        <div class="work-header"><h2 id="work-heading">Selected work<span> / 2024–26</span></h2><div class="gallery-controls"><span class="gallery-count" aria-live="polite">01 / 05</span><button id="previous-work" class="icon-button" aria-label="Previous project">←</button><button id="next-work" class="icon-button" aria-label="Next project">→</button></div></div>
+        <div class="gallery-stage" aria-label="Selected project gallery">
+          <div class="gallery-arc" aria-hidden="true"></div>
+          <div class="gallery-track">
+            <button class="project" data-project="0" style="--slot:-2" aria-label="View MONO, audio brand and digital experience"><div class="project-image"><img src="assets/mono.webp" width="1024" height="1024" alt="Black sculptural headphones against a vivid red studio background"><span class="cover-title mono-title">mono<span>™</span></span></div><span class="project-caption"><span>MONO</span><span>Brand & Digital</span></span></button>
+            <button class="project" data-project="1" style="--slot:-1" aria-label="View Open Form, experimental type and identity"><div class="project-image type-cover"><span class="type-small">AN INDEPENDENT<br>EXPLORATION OF FORM</span><span class="open-type">OPEN<br><i>FORM</i></span><span class="type-bottom">ART DIRECTION / VISUAL IDENTITY</span></div><span class="project-caption"><span>OPEN FORM</span><span>Art Direction</span></span></button>
+            <button class="project" data-project="2" style="--slot:0" aria-label="View Forma, architecture website"><div class="project-image"><img src="assets/forma.webp" width="1024" height="1024" alt="Monumental red circular entrance in a concrete architectural space"><span class="cover-title forma-title">forma®</span></div><span class="project-caption"><span>FORMA</span><span>Web Experience</span></span></button>
+            <button class="project" data-project="3" style="--slot:1" aria-label="View Orbit, digital art and motion study"><div class="project-image orbit-cover"><img src="assets/orbit.webp" width="1024" height="1024" alt="Reflective metal orbital sculpture"><span class="orbit-cover-title">ORBIT<span>BEYOND THE ORDINARY</span></span></div><span class="project-caption"><span>ORBIT</span><span>Digital Art & Motion</span></span></button>
+            <button class="project" data-project="4" style="--slot:2" aria-label="View Off Script, editorial design"><div class="project-image editorial-cover"><span class="editorial-kicker">A JOURNAL FOR<br>INDEPENDENT MINDS</span><span class="editorial-title">Off<br>Script<span>®</span></span><span class="editorial-bottom">NEW IDEAS. NO PERMISSION.</span></div><span class="project-caption"><span>OFF SCRIPT</span><span>Editorial & Web</span></span></button>
+          </div>
+        </div>
+        <div class="gallery-foot"><span>GOOD DESIGN DOESN’T FIT IN.</span><span>IT STANDS OUT.</span></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> LI SHEN</span><span class="footer-note">Made with intention.</span><button class="text-button" data-open="contact-dialog">HAVE SOMETHING IN MIND? <span aria-hidden="true">↗</span></button></footer>
+  </div>
+
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="project-title"><button class="dialog-close" aria-label="Close project">×</button><div class="project-detail-visual" id="project-detail-visual"></div><div class="project-detail-copy"><p class="detail-label" id="project-category"></p><h2 id="project-title"></h2><p id="project-description"></p><div class="project-facts"><div><span>ROLE</span><p id="project-role"></p></div><div><span>PROJECT</span><p>Independent concept</p></div></div><button class="next-project text-button" id="next-detail">NEXT PROJECT <span aria-hidden="true">↗</span></button></div></dialog>
+
+  <dialog id="about-dialog" class="info-dialog" aria-labelledby="about-title"><button class="dialog-close" aria-label="Close about">×</button><p class="detail-label">THE PERSON BEHIND THE PIXELS</p><h2 id="about-title">A sharp eye.<br>A curious mind.</h2><p>I’m Li Shen, an independent designer working at the intersection of brand and digital. I create websites with a clear point of view, from the first idea to the final interaction.</p><div class="about-services"><span>Web design & development</span><span>Visual identity & art direction</span><span>Creative motion & interaction</span></div><p class="about-signature">LI SHEN<span>®</span></p></dialog>
+
+  <dialog id="contact-dialog" class="info-dialog" aria-labelledby="contact-title"><button class="dialog-close" aria-label="Close contact">×</button><p class="detail-label">LET’S MAKE SOMETHING MATTER</p><h2 id="contact-title">Good things start<br>with a hello.</h2><p>A new website, a fresh identity, or an idea that doesn’t quite fit a category. I’d love to hear it.</p><a class="email-link" href="mailto:hello@lishen.design">hello@lishen.design <span aria-hidden="true">↗</span></a><button class="copy-email text-button" id="copy-email">COPY EMAIL ADDRESS</button><p class="copy-status" id="copy-status" role="status"></p></dialog>
+
+  <dialog id="reel-dialog" class="reel-dialog" aria-labelledby="reel-title"><div class="reel-top"><h2 id="reel-title">LI SHEN / SELECTED MOTION</h2><button class="dialog-close" aria-label="Close reel">×</button></div><div class="reel-screen" id="reel-screen"><img id="reel-image" src="assets/orbit.webp" width="1024" height="1024" alt="Orbit digital art"><div class="reel-title" id="reel-project-name">ORBIT</div><span class="reel-subtitle" id="reel-project-kind">FORM IN MOTION</span></div><div class="reel-controls"><button id="reel-toggle" class="text-button">PAUSE</button><progress id="reel-progress" max="12000" value="0" aria-label="Reel progress"></progress><span id="reel-time">00:00 / 00:12</span></div></dialog>
+</body>
+</html>
